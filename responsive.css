@@ -1,0 +1,31 @@
+/* ============ responsive ============ */
+@media (max-width:860px){
+  .sgrid,.tgrid,.rgrid{grid-template-columns:minmax(0,1fr)}
+  .sstick{top:78px;z-index:6}
+  .sstick .panel{padding:10px}
+  .beat{min-height:64vh;min-height:64dvh;align-items:flex-start;padding-top:14px}
+  .hero{grid-template-columns:minmax(0,1fr);padding:44px 0 56px;gap:44px}
+  .two,.dayflex{grid-template-columns:minmax(0,1fr)}
+  section{padding:56px 0}
+  body{font-size:16px}
+}
+@media (max-width:720px){.chapters{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){
+  .brand{display:none}
+  .nav-in{padding-left:6px}
+  .pgrid,.cgrid{grid-template-columns:minmax(0,1fr)}
+  .panel{padding:14px}
+  .tools{flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:10px}
+  .search{flex:none}
+  #zoomChips,#sugs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-14px;padding-inline:14px}
+  #zoomChips::-webkit-scrollbar,#sugs::-webkit-scrollbar{display:none}
+  #zoomChips .chip,#sugs .chip,.sug-label{flex:none;white-space:nowrap}
+}
+@media (hover:none){.search kbd{display:none}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn:hover{transform:none}
+  .beat .ln{opacity:1;transform:none;animation:none!important}
+  .tear,.opt.bad{animation:none}
+  .beat .paper,.sprog i,.cbar i,#storyStrip{transition:none}
+}
